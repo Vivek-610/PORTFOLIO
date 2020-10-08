@@ -1,0 +1,212 @@
+1>
+-ms-flex:0 0 100%;
+flex: 0 0 100%;
+
+2>
+display: -ms-flexbox; ....????
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;....????
+
+3>
+::before,
+::after {
+	box-sizing: border-box;
+}
+	yaha before and after kya hai ....????
+
+4>
+z-index: 10;....????
+
+5>
+white-space: nowrap; ....????
+
+6>
+<div class="progress-in" style="width: 76%;"></div>
+	In this line -->style="width: 76%;     ....???
+
+7>
+overflow: hidden;
+
+8>
+text-transform: capitalize;
+
+9>
+<button type="button" data-filter="all">
+	type="button"  .......->?
+
+10>
+<i class="fa fa-search"></i>
+	why does all the fa's are in    <i></i> ......-->?
+
+11>
+<div class="portfolio-item padd-15" data-category="web-design">
+		data-category="web-design"   .....->?
+
+12>
+position: absolute;
+	all the three different types ....???
+		relative
+		absolute
+		fixed
+
+13>
+transform: translateX(20px);....????
+
+    align-items: center;....????
+	justify-content: center;....????
+
+14>
+@keyframes lightboxImage {
+	0% {
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity=0;
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity=1;
+	}
+}
+		Iss mai 0% and 100% kya hai???
+		also Here opacity [opacity=0;, opacity=1; ]kya hota hai ???
+
+15>Done
+lightboxImg.src=imgSrc;
+	as this shows the src in the console(of inspect)...????
+
+16>
+.lightbox.open {
+	display: -ms-flexbox;
+	display: flex;
+}   
+		.lightbox AND .open there is no space ,Meaning Changes to ....????
+
+17>
+lightboxText.innerHtml=portfolioItems[itemIndex].querySelector("h4").innerHtml;
+	What is ".innerHtml" ....???
+
+18>
+lightboxCounter.innerHTML = (itemIndex+1) + "of" + totalPortfolioItem;
+		Here why we added +1 to itemIndex   ....???
+
+19>
+if (filterValue === portfolioItems[k].getAttribute("data-category"))
+							AND
+if (itemIndex === totalPortfolioItem - 1)
+			Meaning of == AND === is .....???
+
+20>
+lightbox.addEventListener("click", function (event) {
+	console.log(event.target);
+});
+		event.target  ---> What does it mean ...?????
+
+21>
+toggleLightbox(); 
+			How is this function used for opening and closing BOTH ...?? 
+
+22>
+text-transform: capitalize;
+AND
+	overflow: hidden;
+			Means ....???
+
+23>
+textarea.form-control
+			why no space ...??? 
+
+24>
+textarea.form-control
+			why no space ...??? 
+
+25>
+.contact .contact-form .form-item .form-control:focus{
+				what is ":focus" here ....???
+
+26>
+<link rel="stylesheet" class="alternate-style" title="pink" type="text" href="/css/skins/pink.css" type="text/css">
+		type="text/css" ....??(Means)
+
+27>
+<li><a href="#" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+				onclick="setActiveStyle('pink')"    ......?????
+
+28>
+querySelectorAll()			VS       querySelector()     .......???
+
+29>
+  transform: translateX(100%);    ..............???
+
+30>
+//The Gear icon
+document.querySelector(".toggle-style-switcher").addEventListener("click",()=>{
+  document.querySelector(".style-switcher").classList.toggle("open");
+})
+			AND
+					.style-switcher.open{
+  					-webkit-transform: translateX(0%);
+  					transform: translateX(0%);
+					}
+
+			In INSPECT tool of chrome,
+			when i click on gear icon
+						<div class="style-switcher open">
+			And When i click on it again
+						<div class="style-switcher">
+ 
+Here .open is used but no class named open is used in html code under style-switcher 
+			also, What does no space b/w .style-switcher  &  .open MEANS  ....???
+And
+			.addEventListener("click",()=>     what does this [()=>] sign means   .......???
+
+31>
+<input type="radio"> 			type....???
+
+32>
+//Color Change function 
+function setActiveStyle(color) {
+  // console.log(color);
+	for (let i = 0; i < totalLinks; i++) {
+		if (color == links[i].getAttribute("title")) {
+			links[i].removeAttribute("disabled");
+		} else {
+			links[i].setAttribute("disabled", "true");
+		}
+	}
+}
+												Here == also worked ,How ??
+												but he changed into ===
+										
+33>
+bodySkin[i].addEventListener("change",function(){
+		console.log(this);
+		console.log(bodySkin[i]);
+	})
+Same output of both console.log
+								AND
+
+bodySkin[i].addEventListener("change",()=>{
+		console.log(this);
+		console.log(bodySkin[i]);
+	})													
+Different output of both console.log
+								AND
+The difference b/w function() and ()=>			...???
+
+34>
+if (window.innerWidth < 1200) {
+			asideSectionTogglerBtn();
+		}
+
+What does this means...???
+
+35>
+setTimeout(function(){
+	document.querySelector(".preloader").style.display="none";
+	},1000)
+		
+HERE 1000 VALUE is what???? [as 10,100,1000,10000]-all has same effect 		....???
+
+36>
